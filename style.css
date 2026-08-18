@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #15151b;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+nav {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin: auto;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo > a > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 8px;
+}
+.nav-ul {
+  width: 70%;
+}
+
+#first-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* contact me button  at top left*/
+#button-1 {
+  border-radius: 8px;
+  color: white;
+  width: fit-content;
+  border: 1px solid white;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  font-weight: bolder;
+  box-shadow: 1px 1px 1px;
+  background-color: #060a3f;
+  align-self: flex-end;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+/* anchor tag styles */
+a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border: 2px solid;
+  align-items: center;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px black;
+}
+.heading:hover {
+  transform: scale(1.01);
+  transition-duration: 1s;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+#name {
+  font-size: 60px;
+  color: rgb(245, 245, 250);
+}
+.first-1 {
+  padding: 5%;
+  margin: auto;
+}
+/* profile picture  */
+.first-2 {
+  margin: auto;
+}
+
+#button-2,
+#button-3 {
+  border-radius: 8px;
+  color: white;
+  width: fit-content;
+  border: 1px solid white;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  font-weight: bolder;
+  box-shadow: 1px 1px 1px;
+  background-color: #060a3f;
+}
+
+@media (max-width: 426px) {
+  .heading {
+    flex-direction: column;
+    border: 2px solid;
+    margin-top: 80px;
+  }
+  #first-ul > li > a {
+    display: none;
+  }
+  .first-2 > img {
+    display: flex;
+    display: block;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+  }
+  #calculator {
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+  }
+  #fashion {
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+  }
+  #blogging {
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 426px) {
+  .heading {
+    border: 2px solid;
+    flex-direction: row;
+    margin: auto;
+    height: 80vh;
+
+    margin-top: 80px;
+  }
+  .first-2 > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: center;
+  }
+  #calculator {
+    width: 350px;
+    height: 600px;
+  }
+  #fashion {
+    width: 350px;
+    height: 600px;
+    box-sizing: border-box;
+  }
+  #blogging {
+    width: 350px;
+    height: 600px;
+    box-sizing: border-box;
+  }
+}
+
+/* two button */
+#button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail {
+  height: auto;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 5px;
+  border-radius: 10px;
+}
+
+.aboutme {
+  height: auto;
+  padding: 90px 20px;
+  text-align: center;
+  background-color: #27272d;
+}
+
+.education {
+  height: auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+.my-pro {
+  padding: 30px;
+}
+.education-list {
+  list-style-type: none;
+  width: fit-content;
+  text-align: left;
+  margin: auto;
+}
+
+.main-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-color: #27272d;
+}
+
+.skills {
+  display: flex;
+  gap: 25px 35px;
+  grid-column: auto;
+  flex-wrap: wrap;
+  background-color: #27272d;
+  justify-content: center;
+}
+
+.skill-box {
+  border: 2px solid;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #27272d;
+  margin: 20px 0;
+}
+.skill-box:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.experience {
+  height: auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.main-project {
+  background-color: #27272d;
+}
+.pro {
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  border-top: 0;
+  border-radius: 0%;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+#my-pro {
+  font-size: 30px;
+  padding: 50px o;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  margin-top: 20px;
+}
